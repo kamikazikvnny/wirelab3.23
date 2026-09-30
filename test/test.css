@@ -1,0 +1,357 @@
+/* =========================================================
+   PAGE
+========================================================= */
+.testing-art2 {
+    display: block;
+    width: 100vw;
+    max-width: none;
+    height: auto;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+.testing-intro {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.testing-intro h2 {
+    margin: 0 0 10px;
+}
+
+.testing-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   CARD GRID
+========================================================= */
+.testing-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 18px;
+    align-items: start;
+    grid-auto-flow: dense;
+}
+
+/* =========================================================
+   BASE CARD
+========================================================= */
+.testing-card {
+    position: relative;
+    padding: 22px;
+    border:
+        1px solid
+        #6d6218;
+    border-radius: 8px;
+    background:
+        linear-gradient(
+            145deg,
+            #202d39,
+            #171f27
+        );
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================================
+   CARD SIZES
+========================================================= */
+.testing-card-main {
+    grid-column: span 3;
+    min-height: 520px;
+}
+.testing-card-small {
+    grid-column: span 1;
+    min-height: 230px;
+}
+.testing-card-medium {
+    grid-column: span 2;
+    min-height: 230px;
+}
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+.testing-card-header h3,
+.testing-card h3 {
+    margin: 8px 0 10px;
+    color: #ffffff;
+    font-size: 1.35rem;
+}
+
+.testing-card-header p,
+.testing-card > p {
+    margin: 0;
+    color: #c8c8c8;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   CARD LABEL
+========================================================= */
+.card-label {
+    display: inline-block;
+    color: #d4af37;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+/* =========================================================
+   TEST AREA
+========================================================= */
+.test-area {
+    margin-top: 25px;
+    padding: 25px;
+    border:
+        1px solid
+        #4e4e4e;
+    border-radius: 6px;
+    background: #11181f;
+}
+
+/* =========================================================
+   START AREA
+========================================================= */
+.test-start {
+    text-align: center;
+    padding: 35px 15px;
+}
+.test-start h4 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+.test-start p {
+    margin: 0 0 25px;
+    color: #bdbdbd;
+}
+
+/* =========================================================
+   QUESTION AREA
+========================================================= */
+.question-progress {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 10px;
+    color: #d4af37;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+.progress-track {
+    width: 100%;
+    height: 6px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #303840;
+}
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #d4af37;
+    transition: width 0.25s ease;
+}
+
+/* =========================================================
+   QUESTION
+========================================================= */
+.question-area h4 {
+    margin: 0 0 25px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   ANSWER CHOICES
+========================================================= */
+.answer-choices {
+    display: grid;
+    gap: 10px;
+}
+.answer-choice {
+    width: 100%;
+    padding: 13px 15px;
+    border:
+        1px solid
+        #555;
+    border-radius: 5px;
+    background: #202a33;
+    color: #ffffff;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease;
+}
+.answer-choice:hover {
+    border-color: #847715;
+    background: #2b333b;
+}
+.answer-choice.correct {
+    border-color: #7f9b65;
+    background: #30432b;
+}
+.answer-choice.incorrect {
+    border-color: #9b6565;
+    background: #432b2b;
+}
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+.answer-feedback {
+    min-height: 25px;
+    margin-top: 18px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+.answer-feedback strong {
+    color: #d4af37;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+.test-button {
+    margin-top: 20px;
+    padding: 11px 20px;
+    border:
+        1px solid
+        #847715;
+    border-radius: 5px;
+    background: #504506;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+.test-button:hover {
+    background: #66590a;
+}
+
+/* =========================================================
+   TEST COMPLETE
+========================================================= */
+.test-complete {
+    text-align: center;
+    padding: 35px 15px;
+}
+.test-complete h4 {
+    margin: 0 0 15px;
+    color: #d4af37;
+}
+.test-complete p {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+/* =========================================================
+   PROGRESS INFORMATION
+========================================================= */
+.testing-progress {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.testing-progress > div {
+    padding: 14px;
+    border:
+        1px solid
+        #454545;
+    border-radius: 5px;
+    background: #171f27;
+    text-align: center;
+}
+.testing-progress span {
+    display: block;
+    margin-bottom: 5px;
+    color: #9d9d9d;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+.testing-progress strong {
+    color: #d4af37;
+    font-size: 1.2rem;
+}
+
+/* =========================================================
+   RESET BUTTON
+========================================================= */
+.reset-button {
+    display: block;
+    margin: 18px auto 0;
+    padding: 7px 12px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: transparent;
+    color: #999;
+    font-size: 0.72rem;
+    cursor: pointer;
+}
+.reset-button:hover {
+    border-color: #847715;
+    color: #d4af37;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+@media (max-width: 800px) {
+    .testing-content {
+        width: 94%;
+    }
+
+    .testing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testing-card-main,
+    .testing-card-small,
+    .testing-card-medium {
+        grid-column: span 1;
+    }
+
+    .testing-card-main {
+        min-height: auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .testing-content {
+        width: 94%;
+        padding-top: 0;
+    }
+
+    .test-area {
+        padding: 18px;
+    }
+
+    .testing-progress {
+        grid-template-columns: 1fr;
+    }
+}

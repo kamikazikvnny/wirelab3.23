@@ -1,0 +1,875 @@
+/* =====================================================
+   WIRELAB — FUTURE TECH NAVIGATION
+   Black / Charcoal / Electric Gold
+===================================================== */
+
+html {
+    background: #05080a;
+    overflow-y: scroll;
+}
+
+/* =====================================================
+   GLOBAL PAGE WIDTH
+===================================================== */
+
+.page-width {
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   GLOBAL BODY
+===================================================== */
+
+body {
+    margin: 0;
+    padding-top: 104px;
+
+    background:
+        linear-gradient(
+            rgba(3, 6, 8, 0.72),
+            rgba(3, 6, 8, 0.88)
+        ),
+        url("z-images/wirelab-background.webp");
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #ffffff;
+}
+
+/* =====================================================
+   MOBILE BODY
+===================================================== */
+
+@media (max-width: 800px) {
+
+    body {
+        padding-top: 76px;
+        padding-bottom: 70px;
+
+        background-position: center top;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 500px) {
+
+    body {
+        padding-top: 62px;
+    }
+}
+
+/* =====================================================
+   FIXED NAVBAR CONTENT OFFSET
+===================================================== */
+
+main,
+section:first-of-type {
+    scroll-margin-top: 60px;
+}
+
+/* =====================================================
+   NAVBAR TYPOGRAPHY
+===================================================== */
+
+.site-header h1 {
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow",
+        sans-serif;
+}
+
+/* =====================================================
+   MAIN NAVBAR
+===================================================== */
+
+.site-header {
+
+    width: 100%;
+
+    padding:
+        12px clamp(10px, 3vw, 38px);
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 9999;
+
+    box-sizing: border-box;
+
+    background: transparent;
+
+    pointer-events: none;
+}
+
+/* =====================================================
+   NAVBAR TECH FRAME
+===================================================== */
+
+.header-glass {
+
+    width: 100%;
+    max-width: 1600px;
+
+    margin: auto;
+
+    min-height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding:
+        0 clamp(14px, 2.5vw, 28px);
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(9, 14, 18, 0.94),
+            rgba(3, 7, 10, 0.91)
+        );
+
+    border: 1px solid rgba(255, 211, 40, 0.24);
+
+    /*
+       TECHNICAL ANGLED CORNERS
+    */
+    clip-path:
+        polygon(
+            10px 0,
+            calc(100% - 10px) 0,
+            100% 10px,
+            100% calc(100% - 10px),
+            calc(100% - 10px) 100%,
+            10px 100%,
+            0 calc(100% - 10px),
+            0 10px
+        );
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.65),
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        inset 0 -1px 0 rgba(255,210,30,0.08);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    pointer-events: auto;
+
+    overflow: hidden;
+}
+
+/* =====================================================
+   GOLD TECH LINE ACROSS NAVBAR
+===================================================== */
+
+.header-glass::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    top: 0;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(255,210,30,0.15) 8%,
+            rgba(255,210,30,0.9) 30%,
+            #ffd21e 50%,
+            rgba(255,210,30,0.9) 70%,
+            rgba(255,210,30,0.15) 92%,
+            transparent 100%
+        );
+
+    opacity: 0.7;
+}
+
+/* =====================================================
+   SUBTLE TECH GLOW
+===================================================== */
+
+.header-glass::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 100px;
+
+    left: 20%;
+
+    top: -70px;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(255,205,25,0.10),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex: 0 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+/* =====================================================
+   ELECTRIC BRAND ICON
+===================================================== */
+
+.brand-icon {
+
+    font-size: 38px;
+
+    color: #ffd21e;
+
+    line-height: 1;
+
+    filter:
+        drop-shadow(
+            0 0 5px rgba(255,210,30,0.55)
+        )
+        drop-shadow(
+            0 0 15px rgba(255,210,30,0.18)
+        );
+}
+
+/* =====================================================
+   WIRELAB WORDMARK
+===================================================== */
+
+.brand h1 {
+
+    margin: 0;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #f0f1f1;
+
+    text-shadow:
+        0 1px 12px rgba(255,255,255,0.08);
+}
+
+.brand h1::first-letter {
+    color: #ffffff;
+}
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.site-navigation {
+
+    display: flex;
+
+    align-items: stretch;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    flex: 1 1 auto;
+
+    margin-left: 25px;
+}
+
+/* =====================================================
+   NAV BUTTON
+===================================================== */
+
+.nav-button {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 58px;
+
+    padding:
+        0 17px;
+
+    color: #c8ced1;
+
+    text-decoration: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+
+    background: transparent;
+}
+
+/* =====================================================
+   NAV BUTTON TECH SEPARATOR
+===================================================== */
+
+.nav-button:not(:last-child)::before {
+
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+
+    top: 20%;
+
+    width: 1px;
+
+    height: 60%;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(255,255,255,0.12),
+            transparent
+        );
+}
+
+/* =====================================================
+   NAV HOVER
+===================================================== */
+
+.nav-button:hover {
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,210,30,0.05),
+            rgba(255,210,30,0.01)
+        );
+}
+
+/* =====================================================
+   GOLD ACTIVE NAV
+===================================================== */
+
+.nav-button.active {
+
+    color: #ffd21e;
+
+    text-shadow:
+        0 0 8px rgba(255,210,30,0.22);
+}
+
+/* =====================================================
+   ACTIVE TECH LINE
+===================================================== */
+
+.nav-button.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 14px;
+    right: 14px;
+
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #ffd21e 20%,
+            #ffd21e 80%,
+            transparent
+        );
+
+    box-shadow:
+        0 0 8px rgba(255,210,30,0.75),
+        0 0 18px rgba(255,210,30,0.30);
+}
+
+/* =====================================================
+   HEADER ICONS
+===================================================== */
+
+.header-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    flex: 0 0 auto;
+
+    font-size: 25px;
+
+    color: #d4d8da;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.header-icons span {
+
+    cursor: pointer;
+}
+
+.header-icons span:hover {
+
+    color: #ffd21e;
+
+    text-shadow:
+        0 0 12px rgba(255,210,30,0.45);
+}
+
+/* =====================================================
+   PROFILE FRAME
+===================================================== */
+
+.profile-square {
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    color: #d0d5d7;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20,25,28,0.95),
+            rgba(3,7,9,0.95)
+        );
+
+    border: 1px solid rgba(255,210,30,0.55);
+
+    /*
+       ANGLED SCI-FI PROFILE FRAME
+    */
+
+    clip-path:
+        polygon(
+            8px 0,
+            calc(100% - 8px) 0,
+            100% 8px,
+            100% calc(100% - 8px),
+            calc(100% - 8px) 100%,
+            8px 100%,
+            0 calc(100% - 8px),
+            0 8px
+        );
+
+    box-shadow:
+        0 0 12px rgba(255,210,30,0.12),
+        inset 0 1px 0 rgba(255,255,255,0.10);
+}
+
+/* =====================================================
+   PROFILE GOLD CORNER GLOW
+===================================================== */
+
+.profile-square::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    width: 10px;
+    height: 10px;
+
+    background: #ffd21e;
+
+    clip-path:
+        polygon(
+            100% 0,
+            100% 100%,
+            0 100%
+        );
+
+    opacity: 0.8;
+
+    pointer-events: none;
+}
+
+.profile-square:hover {
+
+    color: #ffd21e;
+
+    border-color: #ffd21e;
+
+    box-shadow:
+        0 0 18px rgba(255,210,30,0.20),
+        inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+/* =====================================================
+   PROFILE IMAGE
+===================================================== */
+
+.profile-square img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+/* =====================================================
+   TABLET NAVIGATION
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .header-glass {
+
+        min-height: 54px;
+
+        padding:
+            0 16px;
+    }
+
+    .brand {
+
+        gap: 8px;
+    }
+
+    .brand-icon {
+
+        font-size: 32px;
+    }
+
+    .brand h1 {
+
+        font-size: 21px;
+
+        letter-spacing: 2px;
+    }
+
+    .site-navigation {
+
+        margin-left: 12px;
+
+        gap: 0;
+    }
+
+    .nav-button {
+
+        min-height: 54px;
+
+        padding:
+            0 10px;
+
+        font-size: 12px;
+    }
+
+    .header-icons {
+
+        gap: 9px;
+
+        font-size: 22px;
+    }
+
+    .profile-square {
+
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* =====================================================
+   MOBILE NAVIGATION
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .site-header {
+
+        padding: 6px;
+    }
+
+    .header-glass {
+
+        min-height: 50px;
+
+        padding:
+            0 9px;
+
+        gap: 5px;
+
+        /*
+           Keep navbar compact and horizontal
+        */
+
+        flex-wrap: nowrap;
+
+        border-radius: 0;
+    }
+
+    .brand {
+
+        gap: 5px;
+
+        flex: 0 0 auto;
+    }
+
+    .brand-icon {
+
+        font-size: 25px;
+    }
+
+    .brand h1 {
+
+        font-size: 17px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .site-navigation {
+
+        flex: 1 1 auto;
+
+        min-width: 0;
+
+        display: flex;
+
+        justify-content: space-evenly;
+
+        gap: 0;
+
+        margin-left: 4px;
+
+        overflow: hidden;
+    }
+
+    .nav-button {
+
+        flex: 1 1 0;
+
+        min-width: 0;
+
+        min-height: 50px;
+
+        padding:
+            0 2px;
+
+        font-size: 10px;
+
+        letter-spacing: 0;
+
+        text-align: center;
+    }
+
+    .nav-button.active::after {
+
+        left: 5px;
+        right: 5px;
+
+        height: 2px;
+    }
+
+    .nav-button:not(:last-child)::before {
+
+        display: none;
+    }
+
+    .header-icons {
+
+        flex: 0 0 auto;
+
+        gap: 5px;
+
+        font-size: 20px;
+    }
+
+    .profile-square {
+
+        width: 34px;
+        height: 34px;
+
+        font-size: 17px;
+    }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 500px) {
+
+    .site-header {
+
+        padding: 5px;
+    }
+
+    .header-glass {
+
+        min-height: 48px;
+
+        padding:
+            0 6px;
+
+        gap: 3px;
+    }
+
+    .brand {
+
+        gap: 3px;
+    }
+
+    .brand-icon {
+
+        font-size: 19px;
+    }
+
+    .brand h1 {
+
+        font-size: 13px;
+
+        letter-spacing: 1px;
+    }
+
+    .site-navigation {
+
+        margin-left: 2px;
+    }
+
+    .nav-button {
+
+        min-height: 48px;
+
+        padding:
+            0 1px;
+
+        font-size: 9px;
+    }
+
+    .header-icons {
+
+        gap: 3px;
+
+        font-size: 17px;
+    }
+
+    .profile-square {
+
+        width: 29px;
+        height: 29px;
+
+        font-size: 15px;
+    }
+}
+
+/* =====================================================
+   VERY SMALL SCREENS
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .brand h1 {
+
+        font-size: 11px;
+
+        letter-spacing: 0.5px;
+    }
+
+    .brand-icon {
+
+        font-size: 17px;
+    }
+
+    .nav-button {
+
+        font-size: 8px;
+    }
+
+    .profile-square {
+
+        width: 27px;
+        height: 27px;
+    }
+}
+
+/* =====================================================
+   DISABLE NAVBAR LOAD ANIMATION
+===================================================== */
+
+.site-header,
+.site-navigation,
+.site-header *,
+.site-navigation * {
+
+    animation: none !important;
+
+    transition: none !important;
+}

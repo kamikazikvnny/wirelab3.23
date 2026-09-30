@@ -1,0 +1,524 @@
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.home-content {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.home-hero {
+    position: relative;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    padding: 60px 30px;
+    border: 1px solid #6d6218;
+    border-radius: 8px;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            145deg,
+            #202d39,
+            #101a22
+        );
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.home-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    text-align: center;
+}
+
+.hero-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #d4af37;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.home-hero h2 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: clamp(2.4rem, 6vw, 5rem);
+    line-height: 1;
+    letter-spacing: 0.04em;
+}
+
+.home-hero p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #c8c8c8;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   HERO BUTTON
+========================================================= */
+
+.hero-button {
+    display: inline-block;
+    padding: 13px 24px;
+    border: 1px solid #847715;
+    border-radius: 5px;
+    background: #504506;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.hero-button:hover {
+    background: #66590a;
+    border-color: #a18e20;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d4af37;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.section-heading h2 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.section-heading p {
+    max-width: 700px;
+    margin: 0;
+    color: #aeb5ba;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CORE LOOP
+========================================================= */
+
+.home-loop {
+    margin-bottom: 70px;
+}
+
+.home-action-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 18px;
+}
+
+
+/* =========================================================
+   ACTION CARDS
+========================================================= */
+
+.home-action-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    padding: 22px;
+    border: 1px solid #6d6218;
+    border-radius: 8px;
+    background:
+        linear-gradient(
+            145deg,
+            #202d39,
+            #171f27
+        );
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    transition:
+        transform 0.15s ease,
+        border-color 0.15s ease,
+        background 0.15s ease;
+}
+
+.home-action-card:hover {
+    transform: translateY(-3px);
+    border-color: #847715;
+    background:
+        linear-gradient(
+            145deg,
+            #263642,
+            #1a232c
+        );
+}
+
+.action-number {
+    color: #6f7376;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.action-label {
+    margin-top: 35px;
+    color: #d4af37;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.home-action-card h3 {
+    margin: 7px 0 10px;
+    color: #ffffff;
+    font-size: 1.35rem;
+}
+
+.home-action-card p {
+    margin: 0;
+    color: #b7bdc1;
+    line-height: 1.55;
+}
+
+.action-link {
+    margin-top: auto;
+    padding-top: 25px;
+    color: #d4af37;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.home-progress {
+    margin-bottom: 70px;
+}
+
+.progress-card {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    border: 1px solid #6d6218;
+    border-radius: 8px;
+    background:
+        linear-gradient(
+            145deg,
+            #202d39,
+            #171f27
+        );
+}
+
+.progress-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #d4af37;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.progress-card h3 {
+    margin: 0 0 7px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.progress-card p {
+    margin: 0;
+    color: #aeb5ba;
+    line-height: 1.5;
+}
+
+.progress-stat {
+    min-width: 100px;
+    text-align: center;
+}
+
+.progress-stat strong {
+    display: block;
+    color: #d4af37;
+    font-size: 2rem;
+}
+
+.progress-stat span {
+    color: #8e969b;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.progress-button {
+    padding: 10px 16px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.progress-button:hover {
+    border-color: #847715;
+    color: #d4af37;
+}
+
+
+/* =========================================================
+   COMMAND CENTER
+========================================================= */
+
+.home-command-center {
+    margin-bottom: 70px;
+}
+
+.command-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 18px;
+}
+
+.command-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    padding: 22px;
+    border: 1px solid #454545;
+    border-radius: 8px;
+    background: #171f27;
+    text-decoration: none;
+    transition:
+        border-color 0.15s ease,
+        background 0.15s ease;
+}
+
+.command-card:hover {
+    border-color: #847715;
+    background: #1d2730;
+}
+
+.command-label {
+    color: #d4af37;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.command-card h3 {
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.command-card p {
+    margin: 0;
+    color: #aeb5ba;
+    line-height: 1.55;
+}
+
+.command-link {
+    margin-top: auto;
+    padding-top: 20px;
+    color: #d4af37;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   LAB BENCH
+========================================================= */
+
+.home-lab-bench {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 70px 30px;
+    border: 1px solid #6d6218;
+    border-radius: 8px;
+    background:
+        linear-gradient(
+            145deg,
+            #202d39,
+            #111a21
+        );
+    text-align: center;
+}
+
+.lab-bench-content {
+    max-width: 650px;
+}
+
+.lab-bench-content h2 {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 2.2rem;
+}
+
+.lab-bench-content p {
+    margin: 0 auto 25px;
+    color: #b7bdc1;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .home-action-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .progress-card {
+        grid-template-columns: 1fr auto;
+    }
+
+    .progress-button {
+        grid-column: 1 / -1;
+        justify-self: start;
+    }
+
+    .command-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .home-content {
+        width: 94%;
+    }
+
+    .home-hero {
+        min-height: 400px;
+        padding: 45px 20px;
+        margin-bottom: 50px;
+    }
+
+    .home-hero h2 {
+        font-size: 2.6rem;
+    }
+
+    .home-loop,
+    .home-progress,
+    .home-command-center {
+        margin-bottom: 50px;
+    }
+
+    .home-action-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-action-card {
+        min-height: 230px;
+    }
+
+    .progress-card {
+        grid-template-columns: 1fr;
+    }
+
+    .progress-stat {
+        text-align: left;
+    }
+
+    .progress-button {
+        grid-column: auto;
+        justify-self: start;
+    }
+
+    .command-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-lab-bench {
+        padding: 50px 20px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .home-hero {
+        min-height: 360px;
+        padding: 35px 18px;
+    }
+
+    .home-hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .home-hero p {
+        font-size: 0.95rem;
+    }
+
+    .section-heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-action-card,
+    .progress-card,
+    .command-card {
+        padding: 18px;
+    }
+
+    .home-lab-bench {
+        padding: 45px 18px;
+    }
+
+    .lab-bench-content h2 {
+        font-size: 1.8rem;
+    }
+
+}

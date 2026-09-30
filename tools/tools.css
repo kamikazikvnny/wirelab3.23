@@ -1,0 +1,122 @@
+.tools-art {
+    display: block;
+    width: 100vw;
+    max-width: none;
+    height: auto;
+    margin-top: 0px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-bottom: 0px;
+}
+ 
+ /* =========================================================
+   TOOLS PAGE
+========================================================= */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+main h2 {
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+   
+    font-size: 2.2rem;
+    letter-spacing: 0.15em;
+}
+
+/* =========================================================
+   TOOLS GRID
+========================================================= */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+/* =========================================================
+   TOOL CARDS
+========================================================= */
+.tool-card {
+    position: relative;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #105476;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+/* =========================================================
+   CLICKABLE TOOL
+========================================================= */
+a.tool-card:hover {
+    background: #4a4a4a;
+    transform: translateY(-3px);
+}
+
+/* =========================================================
+   TOOL CONTENT
+========================================================= */
+.tool-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.tool-color-wheel {
+    display: block;
+    width: min(250px, 80%);
+    height: auto;
+    margin: 2px auto;
+}
+.tool-card h3 {
+    margin: 0;
+
+    color: #ffffff;
+    font-size: 1.1rem;
+    letter-spacing: 0.06em;
+}
+.tool-card p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.3rem;
+    letter-spacing: 0.12em;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+.tool-status {
+    margin-top: 10px;
+    color: #d4af37;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+@media (max-width: 700px) {
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-card {
+        min-height: 180px;
+    }
+
+    main h2 {
+        font-size: clamp(1.2rem, 6vw, 2.2rem);
+        letter-spacing: 0.08em;
+    }
+}

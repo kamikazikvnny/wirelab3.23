@@ -1,0 +1,295 @@
+/* =========================================================
+WIRELAB — UNIT 01
+ATOMIC STRUCTURE
+========================================================= */
+
+/* =========================================================
+PAGE
+========================================================= */
+
+.unit01-content {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 0 0 60px;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+UNIT HEADER
+========================================================= */
+.unit01-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+    padding: 22px 28px;
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.035);
+    box-sizing: border-box;
+}
+
+.unit01-number {
+    flex-shrink: 0;
+    color: #9a9a9a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.unit01-title {
+    color: #d4af37;
+    font-size: clamp(26px, 4vw, 40px);
+    font-weight: 700;
+}
+
+.unit01-description {
+    margin: 0 0 0 auto;
+    max-width: 450px;
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+LESSON SECTIONS
+========================================================= */
+
+.unit01-lesson,
+.unit01-concepts,
+.unit01-check {
+margin-bottom: 28px;
+padding: 28px;
+border: 1px solid rgba(212, 175, 55, 0.22);
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.035);
+box-sizing: border-box;
+}
+
+.unit01-section-label {
+margin-bottom: 8px;
+color: #9a9a9a;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+.unit01-section-title {
+margin-bottom: 18px;
+color: #55d9f5;
+font-size: 26px;
+font-weight: 700;
+}
+
+.unit01-text {
+margin: 0 0 14px;
+color: #d0d0d0;
+font-size: 16px;
+line-height: 1.7;
+}
+
+.unit01-text:last-child {
+margin-bottom: 0;
+}
+
+/* =========================================================
+KEY CONCEPTS
+========================================================= */
+
+.unit01-concept-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 14px;
+}
+
+.unit01-concept {
+padding: 20px;
+border: 1px solid rgba(255, 255, 255, 0.10);
+border-radius: 6px;
+background: rgba(0, 0, 0, 0.18);
+}
+
+.unit01-concept-title {
+margin-bottom: 8px;
+color: #d4af37;
+font-size: 18px;
+font-weight: 700;
+}
+
+.unit01-concept-text {
+color: #bdbdbd;
+font-size: 14px;
+line-height: 1.6;
+}
+
+/* =========================================================
+KNOWLEDGE CHECK
+========================================================= */
+
+.unit01-question {
+margin-bottom: 16px;
+color: #ffffff;
+font-size: 18px;
+font-weight: 600;
+line-height: 1.5;
+}
+
+.unit01-answer {
+padding: 18px;
+border-left: 3px solid #3773d4;
+background: rgba(212, 175, 55, 0.06);
+color: #c8c8c8;
+font-size: 15px;
+line-height: 1.6;
+}
+
+/* =========================================================
+UNIT NAVIGATION
+========================================================= */
+.unit01-navigation {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 15px;
+margin-top: 35px;
+padding: 0 10px;
+box-sizing: border-box;
+}
+
+.unit01-back,
+.unit01-complete {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+min-height: 44px;
+padding: 0 22px;
+border: 1px solid rgba(190, 195, 200, 0.38);
+border-radius: 5px;
+box-sizing: border-box;
+font-size: 13px;
+font-weight: 600;
+text-decoration: none;
+cursor: pointer;
+}
+
+.unit01-back {
+color: #cfcfcd;
+background: rgba(255, 255, 255, 0.035);
+}
+
+/* before clicking the complete button */
+.unit01-complete {
+color: #111111;
+background: #6f6f6f;
+border-color: #8f9a90;
+}
+
+.unit01-back:hover {
+background: rgba(255, 255, 255, 0.08);
+}
+
+.unit01-complete:hover {
+background: #bda508;
+}
+
+/* =========================================================
+   UNIT 01 — BLUE LIGHTNING GLASS
+========================================================= */
+
+.unit01-lesson,
+.unit01-concepts,
+.unit01-check {
+    border: 1px solid rgba(70, 210, 240, 0.28);
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(40, 190, 230, 0.10),
+            rgba(255, 255, 255, 0.035)
+        );
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.32),
+        inset 0 1px 0 rgba(255, 255, 255, 0.10),
+        inset 0 -1px 0 rgba(50, 190, 225, 0.08);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.unit01-section-title {
+    color: #b5b50d;
+}
+
+.unit01-text {
+    color: #d7f7fc;
+}
+
+.unit01-concept {
+    border-color: rgba(70, 210, 240, 0.18);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(30, 180, 220, 0.08),
+            rgba(0, 0, 0, 0.20)
+        );
+}
+
+.unit01-concept-title {
+    color: #55d9f5;
+}
+
+.unit01-concept-text {
+    color: #ccecf2;
+}
+
+.unit01-answer {
+    border-left-color: #55d9f5;
+    background: rgba(60, 210, 240, 0.08);
+    color: #ccecf2;
+}
+
+/* =========================================================
+   COMPLETED BUTTON — RESET HOVER
+========================================================= */
+
+.unit01-complete.completed {
+    position: relative;
+    color: #111111;
+    background: #bda508;
+    border-color: #d4ba38;
+    overflow: hidden;
+}
+
+.unit01-complete.completed:hover {
+    color: transparent;
+    background: rgba(85, 85, 85, 0.55);
+    border-color: #eeeaea;
+}
+
+.unit01-complete.completed:hover::after {
+    content: "RESET";
+
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* =========================================================
+   UNIT 01 — MATCH GOLD BORDERS
+========================================================= */
+
+.unit01-lesson,
+.unit01-concepts,
+.unit01-check {
+    border: 1px solid rgba(212, 175, 55, 0.22);
+}

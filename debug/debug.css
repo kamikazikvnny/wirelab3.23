@@ -1,0 +1,140 @@
+/* =========================================================
+   WIRELAB DEBUG
+   ========================================================= */
+
+.debug-page {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    padding: 60px 0 80px;
+}
+
+
+/* =========================================================
+   DEBUG HERO
+   ========================================================= */
+
+.debug-hero {
+    text-align: center;
+    padding: 70px 20px;
+    margin-bottom: 30px;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(214, 168, 79, 0.35);
+    border-radius: 20px;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.debug-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.debug-hero h2 {
+    margin: 0;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    letter-spacing: 0.15em;
+}
+
+.debug-hero p {
+    margin: 15px 0 0;
+    font-size: 1.05rem;
+    opacity: 0.75;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.debug-intro {
+    text-align: center;
+    margin: 0 auto 35px;
+    max-width: 750px;
+}
+
+.debug-intro h2 {
+    margin-bottom: 10px;
+}
+
+.debug-intro p {
+    line-height: 1.7;
+    opacity: 0.75;
+}
+
+
+/* =========================================================
+   DEBUG CARDS
+   ========================================================= */
+
+.debug-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.debug-card {
+    padding: 30px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(214, 168, 79, 0.25);
+    border-radius: 18px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.debug-card-icon {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.debug-card h3 {
+    margin: 0 0 12px;
+    letter-spacing: 0.08em;
+}
+
+.debug-card p {
+    min-height: 55px;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+.debug-card button {
+    margin-top: 15px;
+    padding: 10px 22px;
+
+    background: transparent;
+    color: inherit;
+
+    border: 1px solid rgba(214, 168, 79, 0.6);
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.debug-card button:hover {
+    background: rgba(214, 168, 79, 0.12);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .debug-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .debug-page {
+        padding-top: 40px;
+    }
+
+}
